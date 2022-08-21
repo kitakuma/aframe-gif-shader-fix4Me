@@ -479,7 +479,7 @@
 	   * @public
 	   */
 	  nextFrame: function nextFrame() {
-		  this.__clearCanvas();
+            this.__clearCanvas();
 	    this.__draw();
 
 	    /* update next frame time */
@@ -491,6 +491,7 @@
 	        this.__frameIdx = 0;
 	      }
 	    }
+            this.__clearCanvas();
 	  },
 
 
