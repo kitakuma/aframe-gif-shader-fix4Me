@@ -479,7 +479,6 @@
 	   * @public
 	   */
 	  nextFrame: function nextFrame() {
-            this.__clearCanvas();
 	    this.__draw();
 
 	    /* update next frame time */
