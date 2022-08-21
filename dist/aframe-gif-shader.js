@@ -480,7 +480,7 @@
 	   */
 	  nextFrame: function nextFrame() {
             this.__clearCanvas();
-	    /*this.__draw();*/
+	    this.__draw();
 
 	    /* update next frame time */
 	    while (Date.now() - this.__startTime >= this.__nextFrameTime) {
