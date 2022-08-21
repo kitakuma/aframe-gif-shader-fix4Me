@@ -479,7 +479,7 @@
 	   * @public
 	   */
 	  nextFrame: function nextFrame() {
-            this.__clearCanvas();
+            this.__fillCanvas();
 	    this.__draw();
 
 	    /* update next frame time */
@@ -491,7 +491,6 @@
 	        this.__frameIdx = 0;
 	      }
 	    }
-            this.__clearCanvas();
 	  },
 
 
@@ -499,6 +498,14 @@
 	   =            canvas            =
 	   ==============================*/
 
+		/**fill canvas**/
+		__fillCanvas: function __fillCanvas() {
+			    //塗りスタイルに青色を指定する
+    this.__ctx.fillStyle = "rgb(0, 0, 255)";
+    //左から20上から20の位置に幅50高さ50の塗りつぶしの四角形を描く
+    this.__ctx.fillRect(0,0,this.__width,this.__height);
+		}
+		
 	  /**
 	   * clear canvas
 	   * @private
